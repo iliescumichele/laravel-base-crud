@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        //con il comando "php artisan db:seed" vedo le info nel terminale
+        $this -> call( ComicsTableSeeder::class );
     }
 }
