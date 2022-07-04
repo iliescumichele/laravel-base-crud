@@ -25,8 +25,9 @@
                             <td>{{ $item->title }}</td>
                             <td>{{ $item->type }}</td>
                             <td>
-                                <a class="btn btn-success" href="{{route('comics.show', $item)}}">Show</a>
-                                <a class="btn btn-primary" href="{{route('comics.edit', $item)}}">Edit</a>
+                                <a class="btn btn-success" href="{{ route('comics.show', $item) }}">Show</a>
+                                <a class="btn btn-primary" href="{{ route('comics.edit', $item) }}">Edit</a>
+                                <a class="btn btn-danger" href="{{ route('comics.destroy', $item) }}">Delete</a>
                             </td>
                         </tr>
                     @endforeach
